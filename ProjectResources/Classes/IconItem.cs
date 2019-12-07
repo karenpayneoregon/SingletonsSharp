@@ -2,10 +2,8 @@
 
 namespace ProjectResources.Classes
 {
-    public class IconItem
+    public class IconItem : BaseImage
     {
-        public int Identifier { get; set; }
-        public string Name { get; set; }
         public Icon Image { get; set; }
     }
 }

@@ -2,10 +2,8 @@
 
 namespace ProjectResources.Classes
 {
-    public class BitMapItem
+    public class BitMapItem : BaseImage
     {
-        public int Identifier { get; set; }
-        public string Name { get; set; }
         public Image Image { get; set; }
     }
 }

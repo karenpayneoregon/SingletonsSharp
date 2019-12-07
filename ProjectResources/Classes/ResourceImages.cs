@@ -76,7 +76,8 @@ namespace ProjectResources.Classes
 
             foreach (var propertyInfo in bitMaps)
             {                   
-                _bitMapImagesTable.Rows.Add(null, propertyInfo.Name.Replace("_", " "), 
+                _bitMapImagesTable.Rows.Add(null, 
+                    propertyInfo.Name.Replace("_", " "), 
                     Resources.ResourceManager.GetObject(propertyInfo.Name));
             }
         }
@@ -120,7 +121,8 @@ namespace ProjectResources.Classes
             }
   
         }
-        protected ResourceImages()
+
+        private ResourceImages()
         {
         }
     }

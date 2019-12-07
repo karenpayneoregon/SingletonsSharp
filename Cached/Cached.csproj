@@ -53,7 +53,6 @@
   <ItemGroup>
     <Compile Include="Classes\Application.cs" />
     <Compile Include="Classes\CachedInformation.cs" />
-    <Compile Include="Classes\Class1.cs" />
     <Compile Include="Classes\Customer.cs" />
     <Compile Include="Classes\FileOperations.cs" />
     <Compile Include="Classes\SingletonThreadSafe.cs" />

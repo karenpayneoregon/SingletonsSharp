@@ -18,11 +18,11 @@ namespace ApplicationDataConnectorRecommended.Classes
 
         public string MainConnectionString { get; set; }
 
-        public DataTable ConnectionUsingAppSettings() 
+        public DataTable ConnectionUsingAppSettings()
         {
             var dt = new DataTable();
 
-            using (var cn = new SqlConnection() {ConnectionString = ConnectionString})
+            using (var cn = new SqlConnection() { ConnectionString = ConnectionString })
             {
                 mHasException = false;
 
@@ -50,7 +50,7 @@ namespace ApplicationDataConnectorRecommended.Classes
 
             return dt;
         }
-        public DataTable ConnectionUsingProjectSetting() 
+        public DataTable ConnectionUsingProjectSetting()
         {
             var dt = new DataTable();
 
