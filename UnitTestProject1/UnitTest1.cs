@@ -56,8 +56,8 @@ namespace UnitTestProject1
         public void ValidateSubjectIncrementerTest()
         {
             var actualList = new List<string>();
-            int expectedCount = 89;
-            int actualCount = 0;
+            var expectedCount = 89;
+            var actualCount = 0;
 
             for (var index = 1; index < 90; index++)
             {
