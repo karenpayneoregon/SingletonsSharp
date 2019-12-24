@@ -43,6 +43,10 @@ namespace ProjectResources.Classes
             return _iconImagesTable;
 
         }
+        /// <summary>
+        /// This was to answer a forum question, should be in another class for text only resources.
+        /// </summary>
+        /// <returns></returns>
         public Dictionary<string, string> GetTextResources()
         {
             
