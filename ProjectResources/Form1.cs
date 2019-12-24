@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
 using ProjectResources.Classes;
@@ -40,6 +41,16 @@ namespace ProjectResources
         /// <param name="e"></param>
         private void Form1_Shown(object sender, EventArgs e)
         {
+            var results = ResourceImages.Instance.GetTextResources();
+            foreach (var entry in results)
+            {
+                Console.WriteLine(entry.Key);
+                Console.WriteLine(entry.Value);
+                Console.WriteLine();
+            }
+
+
+
             //var icons = ProjectClassResources.Instance.IconDataTable(); 
             var icons =  ResourceImages.Instance.IconDataTable();
 

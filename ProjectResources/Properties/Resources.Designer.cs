@@ -121,6 +121,16 @@ namespace ProjectResources.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This is information residing in a resource.
+        ///Not much here..
+        /// </summary>
+        internal static string Information1 {
+            get {
+                return ResourceManager.GetString("Information1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Lightbulb {
@@ -137,6 +147,16 @@ namespace ProjectResources.Properties {
             get {
                 object obj = ResourceManager.GetObject("Miata", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FirstName=Karen
+        ///LastName=Payne.
+        /// </summary>
+        internal static string Settings {
+            get {
+                return ResourceManager.GetString("Settings", resourceCulture);
             }
         }
         

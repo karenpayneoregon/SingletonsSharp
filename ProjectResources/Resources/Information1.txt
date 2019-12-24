@@ -1,0 +1,2 @@
+This is information residing in a resource.
+Not much here.

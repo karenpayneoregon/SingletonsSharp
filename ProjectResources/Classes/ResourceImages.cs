@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -42,7 +43,26 @@ namespace ProjectResources.Classes
             return _iconImagesTable;
 
         }
+        public Dictionary<string, string> GetTextResources()
+        {
+            
+            var resultDictionary = new Dictionary<string,string>();
+            var properties = typeof(Resources)
+                .GetProperties(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static);
 
+            var stringItems = (from pi in properties
+                where pi.PropertyType == typeof(string) select pi).ToList();
+
+            if (stringItems.Count <= 0) return resultDictionary;
+
+            foreach (var propertyInfo in stringItems)
+            {
+                resultDictionary.Add(propertyInfo.Name, Resources.ResourceManager.GetObject(propertyInfo.Name)?.ToString());
+            }
+
+            return resultDictionary;
+
+        }
         /// <summary>
         /// Retrieve images from project resources
         /// </summary>

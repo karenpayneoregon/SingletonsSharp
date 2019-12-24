@@ -57,6 +57,8 @@ namespace ProjectResources.Classes
 
         }
 
+
+
         private List<BitMapItem> _bitMapImagesList;
         private void GetBitMapImages()
         {
